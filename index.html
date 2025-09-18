@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhithya B</title>
+    <meta name="description" content="Professional portfolio of Aadhithya B, a passionate ML & DL Engineer specializing in Python and its Libraries to train real-time applications.">
+    <meta name="keywords" content="Machine Learning, Deep Learning, Python, Portfolio, Projects">
+    <meta name="author" content="Aadhithya B">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Aadhithya B - ML & DL Engineer">
+    <meta property="og:description" content="Professional portfolio of Aadhithya B, a passionate ML & DL Engineer specializing in Python and its Libraries to train real-time applications.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dynamic Cursor Trail -->
+    <div id="cursor-trail"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" data-speed="2"></div>
+        <div class="floating-element" data-speed="3"></div>
+        <div class="floating-element" data-speed="1.5"></div>
+        <div class="floating-element" data-speed="2.5"></div>
+        <div class="floating-element" data-speed="1.8"></div>
+    </div>
+
+    <!-- Geometric Shapes Background -->
+    <div class="geometric-shapes">
+        <div class="shape triangle"></div>
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape hexagon"></div>
+        <div class="shape diamond"></div>
+    </div>
+
+    <!-- Canvas for Atomic Animation -->
+    <canvas id="atomic-canvas"></canvas>
+
+    <!-- Loading Screen with Molecular Motion -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="molecular-container">
+                <div class="atom">
+                    <div class="nucleus"></div>
+                    <div class="electron-orbit orbit-1">
+                        <div class="electron"></div>
+                    </div>
+                    <div class="electron-orbit orbit-2">
+                        <div class="electron"></div>
+                    </div>
+                    <div class="electron-orbit orbit-3">
+                        <div class="electron"></div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="shimmer-text">Loading Portfolio...</h2>
+        </div>
+    </div>
+
+    <!-- Navigation with Glassmorphism -->
+    <nav class="navbar glassmorphism" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="gradient-text shimmer-border">Aadhithya B</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active glow-hover" data-section="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link glow-hover" data-section="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link glow-hover" data-section="skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link glow-hover" data-section="projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link glow-hover" data-section="contact">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <div class="hamburger glow-hover" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Trigger zone -->
+    <div class="trigger-zone"></div>
+
+    <!-- Hero Section with Parallax -->
+    <section id="home" class="hero parallax-container">
+        <div class="hero-background parallax-layer" data-speed="0.5">
+            <div class="animated-waves">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+                    <defs>
+                        <path id="gentle-wave" d="m-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use href="#gentle-wave" x="48" y="0" fill="rgba(6,182,212,0.1)" />
+                        <use href="#gentle-wave" x="48" y="3" fill="rgba(236,72,153,0.1)" />
+                        <use href="#gentle-wave" x="48" y="5" fill="rgba(6,182,212,0.05)" />
+                        <use href="#gentle-wave" x="48" y="7" fill="rgba(236,72,153,0.05)" />
+                    </g>
+                </svg>
+            </div>
+            <div class="stars atomic-particles"></div>
+        </div>
+        
+        <div class="hero-content parallax-layer" data-speed="0.8">
+            <div class="profile-image-container tilt-element">
+                <div class="profile-image-wrapper shimmer-border">
+                    <img src="new/PROFILE.webp" alt="Aadhithya B" class="profile-image">
+                </div>
+            </div> 
+
+            <h1 class="hero-title">
+                <span class="shimmer-text">Aadhithya B</span>
+            </h1>
+            <p class="hero-subtitle typing-animation">Machine learning Engineer</p>
+            <p class="hero-description fade-in-up">
+                I'm an enthusiastic and dedicated Machine Learning practitioner with hands-on experience in building and optimizing models using Python, scikit-learn, pandas, and visualization libraries like Matplotlib and Seaborn. I have a strong grasp of fundamental ML techniques such as regression, classification, clustering, and time-series forecasting. I worked on real-world datasets, focusing on energy consumption forecasting and production analytics which helped me develop end-to-end ML pipelines including data cleaning, feature engineering, model tuning, and performance evaluation.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary glow-button tilt-element" onclick="scrollToSection('projects')">
+                    <span>View My Work</span>
+                    <div class="button-glow"></div>
+                </button>
+                <button class="btn btn-secondary glow-button tilt-element" onclick="scrollToSection('contact')">
+                    <span>Get In Touch</span>
+                    <div class="button-glow"></div>
+                </button>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/AadhithyaB" target="_blank" class="social-link glow-hover tilt-element">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aadhithya-b-443349265/" target="_blank" class="social-link glow-hover tilt-element">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:aadhithya333@email.com" class="social-link glow-hover tilt-element">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section with Glassmorphism -->
+    <section id="about" class="about parallax-container">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="gradient-text shimmer-text">About Me</span>
+                </h2>
+                <div class="section-divider shimmer-border"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text glassmorphism tilt-element">
+                    <h3 class="about-subtitle glow-text">My Journey</h3>
+                    <p>
+                        I am a passionate Machine Learning Engineer with a B.E. in Computer Science from University College of Engineering (Anna University). What started as curiosity has grown into a strong drive to design, build, and deploy intelligent ML solutions that create real-world impact.
+                    </p>
+                    <p>
+                        I completed my Machine Learning Internship at Ausweg Info Controls Pvt Ltd, Coimbatore, where I worked on applying recommendation systems, time series forecasting, and data visualization techniques. My role involved data preprocessing, feature engineering, model development, and evaluation using tools like Scikit-learn, XGBoost, and LightGBM, which strengthened my practical understanding of building and deploying AI solutions.
+                    </p>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="about-card glassmorphism flip-card tilt-element">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4 class="card-title cyan glow-text">Education</h4>
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <div class="education-item">
+                                        <h5>B.E Computer Science Engineering</h5>
+                                        <p>University College Of Engineering, BIT Campus , Anna University</p>
+                                        <p>CGPA: 77.5%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card glassmorphism flip-card tilt-element">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4 class="card-title pink glow-text">Experience</h4>
+                                <div class="card-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <div class="experience-item">
+                                        <h5>Machine Learning Engineer Intern</h5>
+                                        <p>Ausweg Info Controls Pvt Lmt (May 2025 - Sept 2025)</p>
+                                        <p>Strong Foundational concepts with pure mathematics and Building ML models</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card glassmorphism flip-card tilt-element">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4 class="card-title cyan glow-text">Certifications</h4>
+                                <div class="card-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="card-content">
+                                    <div class="certifications">
+                                        <span class="badge pink shimmer-border">ML Internship - Ausweg Info Controls Pvt Lmt</span>
+                                        <span class="badge cyan shimmer-border">GitHub Advanced Security</span>
+                                        <span class="badge pink shimmer-border">DataBricks Gen AI</span>
+                                        <span class="badge cyan shimmer-border">Devops - Guvii</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Enhanced Animations -->
+    <section id="skills" class="skills parallax-container">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="gradient-text shimmer-text">Skills & Technologies</span>
+                </h2>
+                <div class="section-divider shimmer-border"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category glassmorphism tilt-element">
+                    <div class="skill-header">
+                        <i class="fas fa-globe skill-icon cyan glow-icon"></i>
+                        <h3 class="skill-title cyan glow-text">Lib & Frameworks</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient glow-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Pandas</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient glow-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Matplotlib & Seaborn</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient glow-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Scikit-Learn</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient glow-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glassmorphism tilt-element">
+                    <div class="skill-header">
+                        <i class="fas fa-server skill-icon pink glow-icon"></i>
+                        <h3 class="skill-title pink glow-text">Model Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Colab</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient-reverse glow-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Streamlit</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient-reverse glow-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glassmorphism tilt-element">
+                    <div class="skill-header">
+                        <i class="fas fa-database skill-icon cyan glow-icon"></i>
+                        <h3 class="skill-title cyan glow-text">Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient glow-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glassmorphism tilt-element">
+                    <div class="skill-header">
+                        <i class="fas fa-code skill-icon pink glow-icon"></i>
+                        <h3 class="skill-title pink glow-text">Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>GitHub</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient-reverse glow-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>VS Code</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient-reverse glow-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Ubuntu</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress gradient-reverse glow-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with 3D Cards -->
+     <section id="projects" class="projects parallax-container">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="gradient-text shimmer-text">Featured Projects</span>
+                </h2>
+                <div class="section-divider shimmer-border"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card glassmorphism tilt-element">
+                    <div class="project-image">
+                        <img src="new/Salary image.jpg" alt="TaskTickr Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AadhithyaB/Salary-Prediction" target="_blank" class="project-link glow-button">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://salary-prediction-0.streamlit.app/#salary-prediction-app" target="_blank" class="project-link glow-button">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title glow-text">Salary Predictor</h3>
+                        <p class="project-description">
+                            Predicting your Salary by your Experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag shimmer-border">Python</span>
+                            <span class="tech-tag shimmer-border">Scikit-Learn</span>
+                            <span class="tech-tag shimmer-border">Pandas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card glassmorphism tilt-element">
+                    <div class="project-image">
+                        <img src="new/personality image.jpeg" alt="Personality Finder">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AadhithyaB/Personality-Finder" target="_blank" class="project-link glow-button">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://personality-finder.streamlit.app/" target="_blank" class="project-link glow-button">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title glow-text">Personality Finder</h3>
+                        <p class="project-description">
+                            Predicting your personality by your outcomes.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag shimmer-border">Python</span>
+                            <span class="tech-tag shimmer-border">Scikit-Learn</span>
+                            <span class="tech-tag shimmer-border">Pandas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card glassmorphism tilt-element">
+                    <div class="project-image">
+                        <img src="new/diabetes.jpeg" alt="Diabetes Prediction">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AadhithyaB/Diabetes-Prediction" target="_blank" class="project-link glow-button">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://diabetes-prediction-373.streamlit.app/" target="_blank" class="project-link glow-button">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title glow-text">Diabetes Prediction</h3>
+                        <p class="project-description">
+                            Predicting your Diabetes by your outcomes.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag shimmer-border">Python</span>
+                            <span class="tech-tag shimmer-border">Scikit-Learn</span>
+                            <span class="tech-tag shimmer-border">Pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-download">
+                <a href="new/Aadhithya_ML_Engineer.pdf" download class="btn btn-primary glow-button tilt-element">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                    <div class="button-glow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Enhanced Effects -->
+    <section id="contact" class="contact parallax-container">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="gradient-text shimmer-text">HangOver with Me</span>
+                </h2>
+                <div class="section-divider shimmer-border"></div>
+                <p class="section-description">
+                    I'm always open to discussing new opportunities and interesting projects. Let's connect!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item glassmorphism tilt-element">
+                        <div class="contact-icon cyan glow-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="glow-text">Email</h3>
+                            <a href="mailto:aadhithya@email.com" class="glow-hover">aadhithya333@email.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item glassmorphism tilt-element">
+                        <div class="contact-icon pink glow-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="glow-text">Phone</h3>
+                            <a href="tel:+918124251918" class="glow-hover">+91 8124251918</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item glassmorphism tilt-element">
+                        <div class="contact-icon cyan glow-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="glow-text">GitHub</h3>
+                            <a href="https://github.com/AadhithyaB" target="_blank" class="glow-hover">Tap to View</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item glassmorphism tilt-element">
+                        <div class="contact-icon pink glow-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="glow-text">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/aadhithya-b-443349265/" target="_blank" class="glow-hover">Tap to View</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container glassmorphism tilt-element">
+                    <form class="contact-form" id="contact-form">
+                        <h3 class="form-title glow-text">Send a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required class="glow-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required class="glow-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required class="glow-input">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required class="glow-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full glow-button">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Glassmorphism -->
+    <footer class="footer glassmorphism">
+        <div class="container">
+            <div class="footer-content">
+                <p class="shimmer-text">&copy; 2025 Aadhithya B. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
